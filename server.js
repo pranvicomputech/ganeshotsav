@@ -60,7 +60,8 @@ app.get('/stores', async (req, res) => {
       slug: s.slug,
       image: s.image,
       mapLink: s.mapLink,
-      averageRating: avg
+      averageRating: avg,
+      totalRatings:ratings.length
     }
   }))
   res.json(results)
